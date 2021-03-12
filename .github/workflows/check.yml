@@ -12,14 +12,16 @@ jobs:
 
     steps:
       # Checks-out repository
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
 
-      # Set up JDK
-      - name: Set up JDK
+      # Set-up JDK
+      - name: Set-up JDK
         uses: actions/setup-java@v1
         with: 
           java-version: 11
+          gpg-private-key: ${{ secrets.MAVEN_GPG_PRIVATE_KEY }} # Value of the GPG private key to import
+          gpg-passphrase: MAVEN_GPG_PASSPHRASE # env variable for GPG private key passphrase
 
-      # Run Maven Verify
-      - name: Run Maven Verify
-        run: mvn clean verify
+      # Maven Verify
+      - name: Run Verify
+        run: mvn verify
