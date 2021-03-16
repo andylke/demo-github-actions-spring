@@ -18,7 +18,5 @@ jobs:
         env:
           MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
       - name: Upload to Codecov
-      - uses: codecov/codecov-action@v1
-        with:
-          file: ./target/site/jacoco/jacoco.xml
-          name: codecov        
+        run:
+          command: bash <(curl -s https://codecov.io/bash)
