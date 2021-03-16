@@ -1,4 +1,4 @@
-name: upload-codecov
+name: Upload to Codecov
 on:
   workflow_dispatch:
 jobs:
