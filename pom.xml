@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.github.andylke</groupId>
 	<artifactId>demo-spring-boot-github-actions</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<name>Demo Spring Boot project used for GitHub Actions</name>
   <description></description>
 
