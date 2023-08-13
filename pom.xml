@@ -8,11 +8,9 @@
 		<version>2.3.8.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.github.andylke</groupId>
-	<artifactId>demo-spring-boot-github-actions</artifactId>
+	<groupId>com.github.andylke.demo</groupId>
+	<artifactId>demo-github-actions-spring</artifactId>
 	<version>1.0.3</version>
-	<name>Demo Spring Boot project used for GitHub Actions</name>
-  <description></description>
 
   <inceptionYear>2021</inceptionYear>
 
